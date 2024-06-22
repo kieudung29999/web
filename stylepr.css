@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    z-index: 1000;
+    position: fixed;
+    margin-top: -25px;
+}
+.icons{
+    padding: 10px;
+    margin-left: 850px;
+}
+
+nav .logo img{
+
+    width: 60px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+nav ul li a{
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: #ffcc33;
+}
+
+nav .search i{
+    font-size: 19px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav .search i:hover{
+    color: #ffcc33;
+}
+.card {
+    border: none; 
+   transition: all 0.3s ease;
+ }
+
+ .card:hover {
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); 
+ }
+
+ .card img {
+            border-radius: 10px; 
+}
+
+ .card-title {
+            font-size: 1.2rem; 
+ }
+
+ .card-text {
+            color: #666; 
+}
+
+.btn-primary {
+            background-color: #ff4500; 
+            border: none;
+            transition: all 0.3s ease; 
+ }
+
+ .btn-primary:hover {
+            background-color: #ff6347; 
+}
+footer{
+            width: 100%;
+            background: #fbe4e4;
+}
+        
+footer .footer_main{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 20px 0;
+ }
+        
+ footer .footer_main .footer_tag{
+            margin: 0 auto;
+}
+        
+ footer .footer_main .footer_tag h1{
+            margin: 20px 0;
+}
+        
+        footer .footer_main .footer_tag p{
+            margin: 9px 0;
+            cursor: pointer;
+        }
+        
+        footer .footer_main .footer_tag p i{
+            margin-right: 10px;
+            
+        }
+        .footer_tag a{
+            text-decoration: none;
+        
+        }
+        
+        footer .end{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 0;
+        }
+        
+        footer .end span{
+            color: #fda211;
+        }
+        
+        footer .end span i{
+            margin: 0 10px;
+        }
+.col-md-3{
+    text-decoration: none;
+}            
+/* CSS cho điện thoại */
+@media (max-width: 767px) {
+    /* Thêm các quy tắc CSS cho các thiết bị có kích thước màn hình nhỏ hơn hoặc bằng 767px */
+    /* Ví dụ: điều chỉnh kích thước và vị trí của các phần tử để phù hợp với màn hình nhỏ hơn */
+}
+
+/* CSS cho máy tính xách tay và màn hình lớn hơn */
+@media (min-width: 768px) {
+    /* Thêm các quy tắc CSS cho các thiết bị có kích thước màn hình lớn hơn hoặc bằng 768px */
+    /* Ví dụ: điều chỉnh kích thước và vị trí của các phần tử để phù hợp với màn hình lớn hơn */
+}

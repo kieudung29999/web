@@ -1,0 +1,418 @@
+:root{
+    --pink: #e84393;
+}
+    
+*{ 
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 2s linear;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x:hidden;
+}
+section {
+    padding:2rem 9%;
+}
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    color:#333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background:rgba(255, 51, 153, .05);
+}
+.heading span {
+    color:var(--pink);
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background:#333;
+    color: #fff;
+    padding:.9rem 3.5rem;
+    cursor: pointer;
+    position: 1.7rem;
+}
+.btn :hover {
+    background: var(--pink);
+}
+header {
+    position: fixed;
+    top:0; left:0; right:0;
+    background:#fff;
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0.5rem 1rem rgba (0, 0, 0, .1) ;
+}
+header .logo{
+    margin-left: 350px;
+
+    font-size: 3rem;
+    color:#a50000;
+    font-weight: bolder;
+}
+header .logo span{
+    color:var(--pink);
+}
+header .menu a{
+    font-size: 2rem;
+    padding:0 1.5rem;
+    color: #666;
+}
+header .icons a{
+    font-size: 2.5rem;
+    color:#333;
+    margin-left: 2rem;
+}
+header .icons a:hover {
+    color:var(--pink);
+}
+header #thanh {
+    display:none;
+}
+header .fa-bars{
+    font-size: 3rem;
+    color:#333;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    cursor:pointer;
+    border:1rem solid rgba(0, 0, 0, .3);
+    display: none;
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+.container {
+    max-width: 1200px;
+    margin:auto;
+}
+.cart-content-left {
+    flex: 2;
+    padding-right: 12px;
+}
+.cart-content-left table {
+    width: 100%;
+    text-align: center;
+}
+.cart-content-left table th {
+    padding-bottom: 30px;
+    font-family: var(--main-text-font);
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #333;
+    border-collapse:collapse ;
+    border-bottom: 2px solid #dddddd;
+}
+.cart-content-left table p {
+    font-family: var(--main-text-font);
+    font-size: 12px;
+    color: #333;
+}
+.cart-content-left table input {
+    width:30px;
+}
+.cart-content-left table span {
+    display: block;
+    width:20px;
+    height:20px;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
+.cart-content-left table td {
+    padding: 20px 0 ;
+    border-bottom: 2px solid #dddddd;
+}
+.cart-content-left td:first-child img {
+    width:130px;
+}
+.cart-content-left td:nth-child(2) {
+    max-width: 130px;
+}
+.cart-content-left td:nth-child(3) img {
+    width: 30px;
+}
+.cart-content-right {
+    flex:1;
+    padding-left: 12px;
+    border-left: 2px solid #dddddd;
+
+}
+.cart-content-right table {
+    width:100%;
+    padding-bottom: 10px;
+}
+.cart-content-right table th {
+    padding-bottom: 30px;
+    font-family: var(--main-text-font);
+    font-size: 12px;
+    color: #333;
+    border-collapse:collapse ;
+    border-bottom: 2px solid #dddddd;
+}
+.cart-content-right table  td {
+
+    font-family: var(--main-text-font);
+    font-size: 12px;
+    color: #333;
+    padding: 10px 0;
+    padding-top: 30px;
+}
+.cart-content-right tr:nth-child(4) td {
+    border-bottom: 2px solid #dddddd;
+}
+.cart-content-right tr td:last-child {
+    text-align: right;
+}
+.cart-content-right-text {
+    margin: 20px 0;
+    text-align: center;
+}
+.cart-content-right-text p {
+    font-family: var(--main-text-font);
+    font-size: 12px;
+    color: #333;
+}
+.cart-content-right-button {
+    text-align: center;
+    align-items: center;
+}
+.cart-content-right-button button {
+    padding: 0 18px;
+    height: 35px;
+    cursor: pointer;
+}
+.cart-content-right-button button:first-child {
+    background-color:#fff;
+    border: 1px solid black;
+    margin-right: 20px;
+}
+.cart-content-right-button button:first-child:hover {
+    background-color: #ddd;
+}
+.cart-content-right-button button:last-child {
+    background-color: black;
+    color: #fff;
+    border: none;
+    border: 1px solid black;
+}
+.cart-content-right-button button:last-child:hover {
+    background-color: #fff;
+    color: black;
+}
+.cart-content-right-dangnhap {
+    margin-top: 20px;
+}
+.cart-content-right-dangnhap p {
+    font-family: var(--main-text-font);
+    font-size: 12px;
+    color: #333;
+    font-weight: bold;
+}
+.cart-content-right-dangnhap a {
+    color: burlywood;
+}
+/*---------------------------------------------*/
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+    header {
+        padding: 2rem;
+    }
+    section {
+        padding: 2rem;
+    }
+    .home {
+        background-position: left;
+    }
+}
+@media (max-width:768px) {
+    header .fa-bars {
+        display: block;
+    }
+    header .menu {
+        position: absolute;
+        top:100%; left:0; right: 0;
+        background-color: #eee;
+        border-top: .1rem solid rgba(0, 0, 0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header #thanh:checked ~ .menu {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    header .menu a {
+        padding: 1.5rem;
+        background: #fff;
+        border: .1rem solid rgba(0, 0, 0,.1);
+        display: block;
+    }
+    .home .content .h3 {
+        font-size: 5rem;
+    }
+    .home .content .span {
+        font-size: 2.5rem;
+    }
+    .icons-container .icons  h3 {
+        font-size: 2rem;
+    }
+    .icons-container .icons  span {
+        color: #555;
+        font-size: 1.7rem;
+    }
+}
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+    /* header {
+        padding: 2rem;
+    } */
+    .heading {
+        font-size:3rem;
+    }
+}
+/* CSS cho điện thoại */
+@media (max-width: 767px) {
+    /* Thêm các quy tắc CSS cho các thiết bị có kích thước màn hình nhỏ hơn hoặc bằng 767px */
+    /* Ví dụ: điều chỉnh kích thước và vị trí của các phần tử để phù hợp với màn hình nhỏ hơn */
+}
+
+/* CSS cho máy tính xách tay và màn hình lớn hơn */
+@media (min-width: 768px) {
+    /* Thêm các quy tắc CSS cho các thiết bị có kích thước màn hình lớn hơn hoặc bằng 768px */
+    /* Ví dụ: điều chỉnh kích thước và vị trí của các phần tử để phù hợp với màn hình lớn hơn */
+}
+/* Thêm các kiểu CSS cho trang giỏ hàng và modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #ffead8;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkout-form {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.checkout-summary {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.total {
+    margin-top: 20px;
+    font-size: 18px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+.selected-products {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+#selectedProductsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#selectedProductsTable th,
+#selectedProductsTable td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#selectedProductsTable th {
+    background-color: #f2f2f2;
+}
+
+#selectedProductsTable img {
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: cover;
+}
+
+.total {
+    margin-top: 20px;
+    font-size: 18px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    text-align: right;
+}
+.submit-btn {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 4px;
+}

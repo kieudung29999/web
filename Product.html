@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel=" stylesheet" href="stylepr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Logo" style="height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gioithieu.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Sản phẩm
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#NK">Trái cây nhập khẩu</a></li>
+                          <li><a class="dropdown-item" href="#VN">Trái cây Việt Nam</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <div class="navbar-nav ms-3">
+                    <a class="nav-item nav-link" href="#"><i class="fa fa-heart"></i></a>
+                    <a class="nav-item nav-link" href="dangnhap.html"><i class="fa fa-user"></i></a>
+                    <a class="nav-item nav-link" href="giohang.html"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</nav>
+
+    <div class="container mt-5"id="NK" >
+        <br><br><br>
+        <h1 class="text-center mb-4" >TRÁI CÂY NHẬP KHẨU</h1>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_55.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Kiwi Xanh - Pháp</h5>
+                        <p class="card-text">Giá: 150,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_55.png', 'Kiwi Xanh - Pháp', 'Kiwi xanh Pháp là loại kiwi thuần chủng, có hình dáng trụ hoặc hình quả trứng. Bề ngoài kiwi xanh Pháp có vỏ màu nâu, nhiều lông xù xì hơn kiwi vàng. Thịt trái kiwi xanh Pháp có màu xanh ngọc rất đẹp mắt, nhiều hạt đen tạo thành vòng tròn xung quanh lõi.','Giá: 150,000₫/kg.')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_8.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Táo dazzle hữu cơ</h5>
+                        <p class="card-text"> Giá: 110,000₫/kg</p>                
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_8.png', 'Táo dazzle hữu cơ', 'Táo Dazzle hữu cơ sinh trưởng tự nhiên ở New Zealand, hấp thụ ánh nắng mặt trời cùng nguồn dinh dưỡng không bị tác động từ bất kỳ hoá chất hay thuốc trừ sâu. Vì thế táo Dazzle hữu cơ không chỉ giàu vitamin C cùng chất xơ, mà còn có độ ngon thuần túy, phù hợp với mọi chế độ ăn uống và mọi lứa tuổi.', ' Giá: 110,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_40.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mâm Xôi Đỏ</h5>
+                        <p class="card-text">Giá: 135,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_40.png', 'Mâm Xôi Đỏ', 'Quả mâm xôi là loại quả ăn thuộc họ hoa hồng, có nguồn gốc từ châu Âu, Bắc Á và được trồng ở các vùng ôn đới trên toàn thế giới. Có nhiều loại quả mâm xôi - bao gồm đen, tím và vàng - nhưng quả mâm xôi đỏ, hay còn gọi là phúc bồn tử là phổ biến nhất.' ,'Giá: 135,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div> 
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_41.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Việt Quất Mỹ</h5>
+                        <p class="card-text">Giá: 105,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_41.png', 'TViệt Quất Mỹ', 'Quả Việt Quất hay còn gọi là Blueberry là một loại quả có rất nhiều công dụng. Quả Việt Quất có nhiều chất bổ dưỡng giúp chống lại bệnh tiểu đường, bệnh tim mạch, giảm cholesterol và nhất là hiện tượng lão hóa của các tế bào trong cơ thể. Đây còn được mệnh danh là một loại quả để chế thuốc trường sinh, mang lại tuổi thọ lý tưởng cho con người.', 'Giá: 110,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_12.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dưa Lưới Hami Đài Loan</h5>
+                        <p class="card-text">Giá: 140,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_12.png', 'Dưa Lưới Hami Đài Loan', 'Dưa lưới Hami Đài Loan là sản phẩm chất lượng cao, xuất phát từ vùng Đài Loan nổi tiếng với nền nông nghiệp phát triển và chất lượng sản phẩm xuất sắc.', 'Giá: 140,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_34.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lê Nhập Khẩu Hàn Quốc</h5>
+                        <p class="card-text">Giá: 112,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_34.png', 'Lê Nhập Khẩu Hàn Quốc', 'Quả Lê Hàn Quốc có hình dáng khá to, lớp vỏ khá dày màu vàng trơn khá bắt mắt. Khi ăn bạn sẽ cảm nhận rõ vị ngọt, giòn thơm của Lê Hàn Quốc. Tuy Lê khá ngọt song độ nóng và độ béo khá thấp nên rất thích hợp với những người đang muốn giảm cân.', 'Giá: 112,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_35.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"> Đào Mỹ </h5>
+                        <p class="card-text">Giá: 100,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_35.png', 'Đào Mỹ', 'Xuân đào Mỹ còn được biết đến với tên gọi khác là đào Mỹ. Trái Xuân đào có xuất xứ từ Trung Quốc. Sau đó, chúng được nhân giống và trồng rộng rãi ở các nước châu Âu vào thế kỷ thứ 16. Trong những năm gần đây, giống cây xuân đào mới được trồng nhiều ở Bắc Mỹ.', ' Giá: 100,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_39.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dâu Tây giống Nhật Sky</h5>
+                        <p class="card-text">Giá: 190,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_39.png', 'Dâu Tây giống Nhật Sky', 'Dâu tây Đà Lạt giống Nhật Bản được canh tác tại Đà Lạt, trồng trong môi trường nhà kính với phương pháp sạch, an toàn. Dâu tây giống Nhật Bản cho quả đỏ, mọng nước, hương thơm mùi kẹo ngọt và có vị ngọt thanh đậm đà, khác với tất cả các loại dâu khác đang được trồng tại Đà Lạt và vùng lân cận hiện nay.', 'Giá: 190,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cherry Mỹ</h5>
+                        <p class="card-text">Giá: 540,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_1.png', 'Cherry Mỹ', 'Cherry Mỹ là loại quả to, căng mọng, thường sống ở nơi có khí hậu ấm áp, khô nóng nên được trồng chủ yếu tại các vùng Bakersfield, Stockton, Arvin, Lodi, và Linden của Mỹ.', ' Giá: 540,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cam Vàng Úc</h5>
+                        <p class="card-text">Giá: 175,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_3.png', 'Cam Vàng Úc', 'Cam Vàng Úc phù hợp với mọi lứa tuổi, với những tép cam mọng nước cùng vị ngọt thanh sẽ làm siêu lòng tất cả các tín đồ yêu Cam cũng như hoa quả nhập khẩu. Cam Vàng Úc là một loại trái cây chứa nhiều Vitamin C giúp tăng cường sức đề kháng, đẹp da chống lão hóa...', ' Giá: 175,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lựu Đỏ Peru</h5>
+                        <p class="card-text">Giá: 100,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_4.png', 'Lựu Đỏ Peru', 'Lựu nhập khẩu trực tiếp từ Peru theo đường hàng không size lớn, trái to, vỏ màu hồng đỏ, hạt đỏ thẫm, nhiều nước, ăn rất ngon, bên cạnh đó còn chứa nhiều vitamin và các khoáng chất có lợi cho sức khỏe và phòng ngừa bệnh tật.', ' Giá: 100,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_5.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hồng Giòn Hàn Quốc</h5>
+                        <p class="card-text">Giá: 190,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_5.png', 'Hồng Giòn Hàn Quốc', 'Hồng giòn Hàn Quốc hiện đang làm mưa, làm gió trên thị trường trái cây nhập khẩu nước ta. Với công nghệ canh tác hoàn toàn tự nhiên không sử dụng thuốc trừ sâu hóa học, giữ được mọi giá trị dinh dưỡng và vị ngon, hồng Hàn Quốc là sự lưa chọn hàng đầu của nhiều người tiêu dùng thông thái.', ' Giá: 190,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_6.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Táo Envy New Zealand</h5>
+                        <p class="card-text">Giá: 270,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_6.png', 'Táo Envy New Zealand', 'Táo Envy New Zealand 3616 được nhiều người yêu thích và lựa chọn không chỉ có hương vị thơm ngon, giòn, ngọt, màu sắc bắt mắt sang trọng, mà còn vì, táo đem lại rất nhiều những lợi ích tốt cho sức khỏe', ' Giá: 270,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_7.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Táo Juliet Pháp</h5>
+                        <p class="card-text">Giá: 175,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_7.png', 'Táo Juliet Pháp', 'áo Juliet Organic trái cây tươi nhập khẩu được đánh giá là thương hiệu táo nổi tiếng bậc nhất trên thế giới, là loại táo hữu cơ đầu tiên đạt chất lượng xuất khẩu ra thế giới. Táo Juliet Organic được ra đời tại các trang trại táo lớn phía Nam nước Pháp, diện tích vào khoảng 350 hecta. Đây được xem là thành quả của quá trình nghiên cứu lâu năm, qua nhiều thử nghiệm nghiêm ngặt, táo Juliet không sử dụng bất kì loại phân bón, hoá chất, các loại thuốc kích thích tăng trưởng, đảm bảo táo hữu cơ 100%.', ' Giá: 175,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_10.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nho Mẫu Đơn Hàn Quốc</h5>
+                        <p class="card-text">Giá: 500,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_10.png', 'Nho Mẫu Đơn Hàn Quốc', 'Nho mẫu đơn Hàn Quốc – Sự kết hợp tuyệt vời giữa hương vị ngọt ngào và chất lượng cao cấp. Hay còn được gọi là “nho thần thoại”, là loại nho được trồng và sản xuất tại Hàn Quốc. Nho có kích thước nhỏ hơn các loại nho khác, tuy nhiên lại có vị ngọt thanh và hương vị đặc trưng khác biệt. Với màu xanh lá cây đậm đà và bóng loángđã mang đến cho người dùng một trải nghiệm ẩm thực thú vị và đầy thú vị.', ' Giá: 500,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_14.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dâu Tây Úc</h5>
+                        <p class="card-text">Giá: 250,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_14.png', 'Dâu Tây Úc', 'Dâu tây nhập khẩu từ Úc được biết đến là loại trái cây có mùi thơm hấp dẫn cùng hương vị đặc trưng, vị dâu ngọt xen lẫn chua nhẹ rất được mọi người yêu thích. Những trái dâu tây đỏ mọng hình trái tim, vẫn còn nguyên cuống và đài xanh được bao bọc cẩn thận đạt chuẩn chất lượng cả về mẫu mã và hương vị.', ' Giá: 250,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_37.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nho xanh Autumn Crisp</h5>
+                        <p class="card-text">Giá: 355,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_37.png', 'Nho xanh Autumn Crisp', 'Cầm trên tay quả nho xanh autumn Crisp Mỹ, chậm rãi đưa vào miệng, cắn nhẹ một cái… Vị đầu tiên bạn cảm nhận được từ nho xanh mỹ đó là chút chua xao xuyến, thấm sâu vào là vị ngọt thanh tao, giòn ngon mê hoặc lòng người.', ' Giá: 355,000₫/kg')">Xem thêmt</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_38.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nho Hồng Nhật</h5>
+                        <p class="card-text">Giá: 355,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_38.png', 'Nho Hồng Nhật', 'NHO HỒNG NHẬT được biết đến với nhiều cái tên như “nho hồng móng tay”, “nho hồng Ninh Thuận”. Loại nho này có hình dáng như móng tay, trái nho được bao nhủ bởi lớp màu xanh chuyển đỏ hồng trông cực kì đẹp mắt. Còn nói về hương vị thì nho hồng có vị ngọt nhẹ, đặc biệt độ giòn và mọng nước thì không thu kém gì so với nho xanh loại một. Ưu điểm của nho hồng là vẻ bề ngoài bắt mắt cùng với vị ngọt nhẹ không gắt, nên chị em có thể ăn nhiều mà không sợ bị nóng, bị mụn hoặc yên tâm khi mua về cho gia đình sử dụng. Bên cạnh đó, đây sẽ là một món quà thú vị khi đem tặng người thân, bạn bè.', ' Giá: 355,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_9.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Táo Pixie Hữu Cơ Pháp</h5>
+                        <p class="card-text">Giá: 120,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_9.png', 'Táo Pixie Hữu Cơ Pháp', 'Táo Pixie hữu cơ Pháp không chỉ ngon miệng mà còn có vẻ đẹp tự nhiên quyến rũ. Với màu sắc tươi sáng và hình dáng độc đáo, chúng là một phần không thể thiếu của bữa ăn và bữa sáng hấp dẫn của bạn.', ' Giá: 120,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_42.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sung Mỹ Hữu Cơ</h5>
+                        <p class="card-text">Giá: 145,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_42.png', 'Sung Mỹ Hữu Cơ','Sung Mỹ – loại cây trồng mới lạ đang được nhiều người quan tâm và tìm hiểu trong thời gian gần đây. Không chỉ dừng lại ở việc là một loại trái ngon, tốt cho sức khỏe, đây còn là loại kiểng mới mang lại nhiều điều thú vị cho người trồng. ', ' Giá: 145,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5" id="VN">
+        <br><br><br>
+        <h1 class="text-center mb-4">TRÁI CÂY VIỆT NAM</h1>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_43.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Vú Sữa Hoàng Kim </h5>
+                        <p class="card-text">Giá: 55,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_43.png', '>Vú Sữa Hoàng Kim', 'Vú sữa Hoàng Kim hay còn gọi là vú sữa vàng, vú sữa Đài Loan, có tên khoa học là Pouteria Caimito, có nguồn gốc từ Đài Loan. Vú sữa là cây mọc hoang ở Hawaii, Mỹ sau này được nhân giống ở nhiều quốc gia trên thế giới.', ' Giá: 55,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ổi Ruby hữu cơ Quế Lâm</h5>
+                        <p class="card-text">Giá: 45,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_2.png', 'Ổi Ruby hữu cơ Quế Lâm', 'Ổi giòn tan, có hậu vị thanh nhẹ. Chuẩn với  sử dụng trái tươi hay nước ép Ổi – Detox hay Healthy đều rất chuẩn luôn ah.', ' Giá: 45,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_44.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bưởi Da Xanh Ruột Đỏ</h5>
+                        <p class="card-text">Giá: 100,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_44.png', 'Bưởi Da Xanh Ruột Đỏ', 'Bưởi da xanh ruột đỏ là một loại trái cây rất tốt cho sức khỏe, được nhiều người ưa chuộng. Không chỉ cung cấp dưỡng chất cho cơ thể, bưởi da xanh còn có vẻ ngoài đẹp mắt, thường được làm quà biếu tặng. ', ' Giá: 100,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_45.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dưa Hấu Adam có hạt hữu cơ</h5>
+                        <p class="card-text">Giá: 60,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_45.png', 'Dưa Hấu Adam có hạt hữu cơ', 'Được trồng tại trang trại được chứng nhận USDA, EU. Là các sản phẩm được canh tác nghiêm ngặt theo tiêu chuẩn Organic, tuyệt đối không sử dụng phân bón hoá học, thuốc trừ sâu, kích thích tăng trưởng,... Rất yên tâm để sử dụng cho cả gia đình, đặc biệt là những người có thể trạng không khỏe mạnh.', ' Giá: 60,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_46.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mít Tố Nữ</h5>
+                        <p class="card-text">Giá: 130,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_46.png', 'Mít Tố Nữ', 'Mít tố nữ có thể được coi là một trong những giống mít đứng đầu về chất lượng và hương vị. Quả mít nhỏ nhưng nhiều múi và cùi khá dày nên được nhiều người yêu thích.', ' Giá: 130,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_11.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bơ 034</h5>
+                        <p class="card-text">Giá: 60,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_11.png', 'Bơ 034', 'Bơ 034 là giống bơ được đánh giá là loại bơ sáp cho trái chính và cả trái nghiệp, năng suất cao, chất lượng kết quả vào loại ngon nhất trong những giống bơ sáp hiện nay.', ' Giá: 60,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_13.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sầu Riêng Ri 6</h5>
+                        <p class="card-text">Giá: 150,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_13.png', 'Sầu Riêng Ri 6', 'Là loại sầu riêng được thấy với cơm vàng, hạt lép, không dính tay, ngọt nhẹ, không ngấy, mùi thơm. Múi sầu riêng to rõ ràng, trong mỗi múi đều có chứa một ít thịt màu trắng kem hoặc vàng. Và hạt sầu riêng có hình dạng giống như hạt dẻ màu nâu bóng dài từ 2 đến 6 cm ', ' Giá: 150,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_36.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cam Sành Hữu Cơ</h5>
+                        <p class="card-text">Giá: 25,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_36.png', 'Cam sành hữu cơ', 'là loại trái cây được trồng theo mô hình hữu cơ, cam chín mang đậm hương vị tự nhiên ngọt chua thanh, múi vàng ươm, mọng nước. Cam sành hữu cơ một trong những loại trái cây hàng đầu cung cấp nhiều dưỡng chất cho cơ thể như: Vitamin C, vitamin A, chất xơ, canxi, kali,.', ' Giá: 25,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_15.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dưa Hấu Không Hạt</h5>
+                        <p class="card-text">Giá: 135,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_15.png', 'Dưa Hấu Không Hạt', ' Dưa hấu không hạt là trái cây giàu nước, vitamin A, vitamin C, khoáng chất cần thiết cho cơ thể như kali, kẽm, canxi, đặc biệt ít calo và chất béo..', ' Giá: 135,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_17.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chuối Sứ Hữu Cơ</h5>
+                        <p class="card-text">Giá: 30,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_17.png', 'Chuối Sứ Hữu Cơ', ' Chuối Sứ Hữu Cơ được trồng và chăm sóc một cách tự nhiên, không sử dụng hóa chất độc hại và phân bón hóa học. Với quy trình sản xuất theo phương pháp hữu cơ, chúng tôi cam kết mang lại cho bạn những trái chuối chất lượng cao, giàu dinh dưỡng và an toàn cho sức khỏe..', ' Giá: 30,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_18.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Măng Cụt</h5>
+                        <p class="card-text">Giá: 50,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_18.png', 'Măng Cụt', '  Măng cụt được mệnh danh là nữ hoàng của trái cây. Trong vỏ măng cụt có chứa hàm lượng cao chất kháng thể Xanthones có tác dụng ngăn ngừa lão hóa, hạ cholesterol xấu, đồng thời ngăn ngừa sự hình thành các tế bào sợi có nguy hại với sức khỏe..', ' Giá: 50,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_19.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mận Hà Nội</h5>
+                        <p class="card-text">Giá: 55,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_19.png', 'Mận Hà Nội', 'Mận Hà Nội” là tên gọi chung của người miền Nam cho Mận tam hoa ở Bắc Hà (Lào Cai) và Mận hậu Mộc Châu (Sơn La). Mận tam hoa có lớp thịt màu đỏ tím, vị chua chua hơi ngọt. Còn Mận hậu là khi ăn xong có vị ngọt kéo dài. Mận Hà Nội (ở đây gọi tắt là mận) chấm với muối ớt, muối tôm hoặc làm mận lắc thì dễ ăn hơn.', ' Giá: 55,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+              <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_16.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dứa Mật MD2</h5>
+                        <p class="card-text">Giá: 40,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_16.png', 'Dứa Mật MD2', 'Dứa mật hay còn gọi là thơm mật hoặc khóm mật, là giống thơm có trái khá to, mỗi trái tầm 1.5-2.5kg, mắc nở to, thịt bên trong màu vàng nhạt, xen lẫn những phần thịt nhìn trong suốt, tươm mật cực kì ngọt, là dấu hiệu đặc trưng nhận biết giống thơm này..', ' Giá: 40,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_20.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nhãn Xuồng Cơm Vàng</h5>
+                        <p class="card-text">Giá: 45,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_20.png', 'Nhãn Xuồng Cơm Vàng', ' Nhãn xuồng cơm vàng là loại trái cây được nhiều người yêu thích bởi quả nhãn to, khi bóc vỏ ra cơm vàng ươm, thơm lừng, ngọt thanh và giòn. Hơn nữa, nó cũng chứa nhiều dinh dưỡng tốt cho sức khỏe mà bạn không thể bỏ qua.Không chỉ có vị ngọt, dễ ăn mà trong nhãn xuồng cơm vàng chứa nhiều dinh dưỡng, protein, đường thiên nhiên và các khoáng chất như magie, sắt, axit hữu cơ, chất xơ, có lợi cho hệ thần kinh, tiêu hóa, vitamin C, B1, PP, kali.', ' Giá: 45,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_22.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Đu Đủ Mini</h5>
+                        <p class="card-text">Giá: 50,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_22.png', 'Đu Đủ Mini', 'Đu đu mini có kích thước tương đối nhỏ, hình dáng giống quả lê tây. Quả có vỏ cứng màu vàng, ruột đỏ cam và có vị ngọt lịm. Mỗi quả chỉ nặng tầm 600 gram nhưng nó mang lại giá trị dinh dưỡng rất cao, cực kì tốt cho sức khỏe.', ' Giá: 50,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_26.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mãng Cầu Thái</h5>
+                        <p class="card-text">Giá: 55,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_26.png', 'Mãng Cầu Thái', 'Trái Mãng cầu thái, hay còn được gọi là “Na thái,” là một loại trái cây độc đáo xuất phát từ vùng đất Thái Lan. Với hình dáng, màu sắc, và hương vị độc đáo, trái Mãng cầu thái đã trở thành một món ngon nổi tiếng trên toàn thế giới.Trái Mãng cầu thái chứa nhiều dưỡng chất quý giá như vitamin C, kali, và chất xơ. Chúng cũng được cho là có khả năng chống oxi hóa và hỗ trợ sức kháng của cơ thể.', ' Giá: 55,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_48.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hồng Xiêm Hữu Cơ</h5>
+                        <p class="card-text">Giá: 65,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_48.png', 'Hồng Xiêm Hữu Cơ', 'Hồng xiêm còn có tên gọi khác là sapoche, là một loại quả có vị ngọt, thơm với giá trị cao về mặt dinh dưỡng. Theo đó, loại trái cây này có chứa nhiều chất dinh dưỡng cần thiết như chất đạm, chất béo, calories, canxi, các loại vitamin,... tốt cho sức khỏe con người.Với thành phần dinh dưỡng có chứa đường fructose, glucose, sucrose,  hồng xiêm là loại quả có lợi ích trong việc cung cấp năng lượng cho cơ thể .', ' Giá: 65,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_47.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mận An Phước</h5>
+                        <p class="card-text">Giá: 70,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_47.png', 'Mận An Phước', 'Mận An Phước có vỏ màu đỏ tím, có vân nhạt, tỏa mùi thơm nhẹ. Mận được chăm sóc, chọn lọc kỹ càng từng trái, đảm bảo thơm ngon đúng chuẩn.Mận An Phước chứa nhiều nhóm axit amin và vitamin C giúp tăng cường khả năng tiêu hóa, thanh lọc cơ thể. Nên sử dụng mận sau khi ăn no, tránh sử dụng mận khi bụng đói sẽ gây tình trạng cào ruột.Trong quả mận có chứa nhiều nước, giúp thanh nhiệt, giải khát cho cơ thể. Sử dụng nước ép mận trong giảm cân giúp đốt mỡ và tăng cường thể lực.', ' Giá: 70,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_53.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Thanh Long Ruột Đỏ</h5>
+                        <p class="card-text">Giá: 80,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_53.png', 'Thanh Long Ruột Đỏ', 'Thanh long đỏ xuất xứ Colombia, tên khoa học là Hylocereus costaricensis, tên tiếng Anh là Red Dragon Fruit.Hàm lượng của một số dưỡng chất trong thanh long đỏ cao gần gấp đôi so với thanh long trắng. Nổi bật là 3 chất: carotene (chất tiền vitamin A), vitamin C và chất chống oxy hóa anthocyanin. Một trái thanh long màu đỏ có 85.3% là nước.Ruột bên trong quả có màu đỏ đậm đẹp mắt, vị ngọt hơn thanh long màu trắng. Giá trị dinh dưỡng của thanh long màu đỏ cũng rất phong phú, có lợi ích cho sức khỏe và làm đẹp.', ' Giá: 80,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_51.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chuối Già Hữu Cơ</h5>
+                        <p class="card-text">Giá: 55,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_51.png', 'Chuối Già Hữu Cơ', 'Các bác sỹ của Mỹ khẳng định, một trong các món ăn bổ dưỡng nhất của loài người là trái chuối. Nhất là đối với các quý ông, chuối có tác dụng tăng hưng phấn và rút ngắn thời gian quay trở lại.Ngoài ra, nhờ dễ tiêu hoá nên chuối có thêm ưu điểm của món ăn cung cấp năng lượng nhanh khi có nhu cầu cấp bách. Ngay khi mỏi mệt, gặp lúc đường huyết hạ thấp, chỉ cần trái chuối là xong.Chuối là món tráng miệng không nên thiếu trên bàn ăn của người bệnh tim mạch, cụ thể là người cao huyết áp nhờ tác dụng vừa lợi tiểu nhẹ, vừa bổ sung kali cho cơ thể dễ bị thiếu hụt vì dùng thuốc lâu ngày.', ' Giá: 55,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_54.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Vú Sữa Bơ Hồng</h5>
+                        <p class="card-text">Giá: 65,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_54.png', 'Vú Sữa Bơ Hồng', 'Vú sữa bơ hồng là loại trái cây không những ngọt thơm mà còn chứa nhiều Vitamin, chất xơ và khoáng chất và chứa ít calo.Vú sữa bơ hồng có trái to, bóng, vỏ mỏng, có màu hồng tươi đẹp, thịt dày và mềm, cho nhiều sữa, có vị ngọt thanh và thơm mùi bơ sữa.Vú sữa bơ hồng được bao trái từ nhỏ chống ruồi vàng chích nên trái không bị dòi. Được thu hoạch từ cây lão làng trên 20 năm nên cho chất lượng trái ngon ngọt nhất.', ' Giá: 65,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_49.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dưa Lê</h5>
+                        <p class="card-text">Giá: 145,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_49.png', 'Dưa Lê', 'Loại quả này phát triển tốt nhất ở vùng khí hậu bán khô hạn và được thu hoạch dựa trên độ chín chứ không phải kích thước.Dưa lê có 90% là nước, 9% carbohydrate, 0,1% chất béo và 0,5% protein. Giống như hầu hết các loại dưa, nó là một nguồn cung cấp hàm lượng vitamin C cao, dưa lê được khuyến khích sử dụng hằng ngày.Dưa lê cũng là một nguồn cung cấp vitamin B thiamine, cũng như các vitamin B khác và khoáng chất kali. ', ' Giá: 145,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_50.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bơ Sáp Dẻo</h5>
+                        <p class="card-text">Giá: 80,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_50.png', 'Bơ Sáp Dẻo', 'Bơ sáp là đặc sản của vùng đất Tây Nguyên có hương vị thơm ngon, dẻo bùi và chứa nhiều chất dinh dưỡng tốt cho sức khỏe. Hiện nay, trên thị trường có nhiều loại bơ và mỗi loại đều có hương vị riêng.Bơ sáp có đặc điểm là phần cơm màu vàng, dẻo ngon cùng hương vị thơm ngậy, dẻo ngon. Lớp vỏ của trái bơ thường sần sùi và có nốt li ti màu vàng. Loại bơ này có thể được ăn theo nhiều cách khác nhau. Bơ cũng được nhiều người yêu thích bởi có giá trị dinh dưỡng cao.', ' Giá: 80,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/produ_56.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Đu Đủ Ruột Đỏ</h5>
+                        <p class="card-text">Giá: 55,000₫/kg</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" onclick="showProductDetails('produ_56.png', 'Đu Đủ Ruột Đỏ', 'Đu đủ Ruột Đỏ là kho báu dinh dưỡng mà thiên nhiên ban tặng. Với một kg Đu đủ Ruột Đỏ, bạn sẽ được hưởng một nguồn vitamin C dồi dào, giúp tăng cường hệ miễn dịch và cải thiện sức kháng. Ngoài ra, sản phẩm còn chứa các chất chống oxy hóa mạnh mẽ, giúp bảo vệ tế bào khỏi tác động của gốc tự do và nguy cơ các bệnh mãn tính. Thêm vào đó, Đu đủ Ruột Đỏ cung cấp một lượng lớn chất xơ thiết yếu, giúp cải thiện hệ tiêu hóa, duy trì cân bằng đường huyết và hỗ trợ quá trình giảm cân hiệu quả.', ' Giá: 55,000₫/kg')">Xem thêm</a>
+                        <a href="#" class="btn btn-shopping-cart">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <br>
+            <div class="row">
+                <div class="col-md-3" >
+                    <h1>Liên kết</h1>
+                    <a href="index.html">Trang chủ</a><br>
+                    <a href="gioithieu.html">Giới thiệu</a><br>
+                    <a href="Product.html">Sản phẩm</a><br>
+                    <a href="blog.html">Blog</a>
+                </div>
+                <div class="col-md-3">
+                    <h1>Liên lạc</h1>
+                    <p><i class="fa-solid fa-location-dot"></i>Ngũ Hành Sơn, Đà Nẵng</p>
+                    <p><i class="fa-solid fa-phone"></i>0395763847</p>
+                    <p><i class="fa-solid fa-phone"></i>0385674857</p>
+                    <p><i class="fa-solid fa-envelope"></i>fruit123@gmail.com</p>
+                </div>
+                <div class="col-md-3">
+                    <h1>Theo dõi</h1>
+                    <p><i class="fa-brands fa-facebook-f"></i>Facebook</p>
+                    <p><i class="fa-brands fa-twitter"></i>Twitter</p>
+                    <p><i class="fa-brands fa-instagram"></i>Instagram</p>
+                    <p><i class="fa-brands fa-google"></i>Google</p>
+                </div>
+                <div class="col-md-3">
+                    <h1>Thanh toán online</h1>
+                    <img src="img/card1.png" alt="Card 1">
+                    <img src="img/card2.png" alt="Card 2">
+                    <img src="img/card3.png" alt="Card 3">
+                    <img src="img/card4.png" alt="Card 4">
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- Modal -->
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel">Chi tiết sản phẩm</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img id="modalImage" src="" alt="Product Image" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h5 id="modalTitle">Tên</h5>
+                        <p id="modalDescription">Miêu tả</p>
+                        <p id="productPrice"> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function showProductDetails(image, title, description, price) {
+        document.getElementById('modalImage').src = 'img/' + image;
+        document.getElementById('modalTitle').innerText = title;
+        document.getElementById('modalDescription').innerText = description;
+        document.getElementById('productPrice').textContent = price; 
+    }
+</script>
+
+</body>
+</html>

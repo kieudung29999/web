@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device -width,initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="styledangnhap.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .btn-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .btn {
+            width: 45%;
+            font-size: 14px;
+        }
+        /* Tạo khoảng cách giữa các nút */
+        .btn + .btn {
+            margin-left: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <form id="registerForm">
+            <h1> Đăng ký </h1>
+            <div class="input-box">
+                <input type="text" placeholder="example@gmail.com" required id="user">
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Mật khẩu" required id="pass">
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Nhập lại mật khẩu" required id="confirmPass">
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Nhớ mật khẩu</label>
+            </div>
+            <div class="btn-container">
+                <button type="button" class="btn" onclick="checkForm()">Đăng ký ngay</button>
+                <button type="button" class="btn" onclick="window.location.href='login.html'"> <a href="dangnhap.html"> Đăng nhập</a></button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function checkForm() {
+            var user = document.getElementById("user").value;
+            var pass = document.getElementById("pass").value;
+            var confirmPass = document.getElementById("confirmPass").value;
+            if (!isValidUsername(user)) {
+                alert("Tên đăng nhập không hợp lệ. Vui lòng sử dụng định dạng email.");
+                return;
+            }
+            if (pass.trim() === "") {
+                alert("Vui lòng nhập mật khẩu.");
+                return;
+            }
+            if (pass !== confirmPass) {
+                alert("Mật khẩu không khớp. Vui lòng nhập lại.");
+                return;
+            }
+            alert("Đăng ký thành công!");
+        }
+        function isValidUsername(username) {
+            var pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return pattern.test(username);
+        }
+    </script>
+</body>
+</html>
